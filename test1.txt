@@ -1,0 +1,33 @@
+
+import java.util.*;
+
+public class IteratorDemo {
+    public static void main(String args[]) {
+        /*
+        TEST1 ASSIGNMENT
+        NAME :MUWONGE LAWRENCE
+        REGNO:19/U/0114
+        STNO:1900700114
+        */
+        ArrayList<Integer> numbers= new ArrayList();
+        int i,j,k=0;
+        int count=0;//counts numbers displayed in arow
+        for( i=0;i<4;i++)
+            for(j=0;j<5;j++){
+                numbers.add(k);
+                k++;
+            }
+
+        Iterator itr = numbers.iterator();
+        while(itr.hasNext()){
+            Object number=itr.next();
+            System.out.print(number +" ");
+            count++;
+            if(count%5==0){
+                System.out.println();
+            }
+
+
+        }
+    }
+}
